@@ -1,0 +1,71 @@
+$font: 18px;
+$background-start-rgb: rgb(38, 38, 38);
+$background-end-rgb: rgb(28, 28, 28);
+$foreground-rgb: rgb(255, 255, 255);
+$regular-font: Formula1-Regular;
+$black-font: Formula1-Black;
+
+
+.title {
+    margin-top: 0.5em;
+    font-size: 3.5em;
+    text-align: center;
+    color: $foreground-rgb;
+}
+
+.description {
+    margin-top: 1em;
+    text-align: center;
+    color: $foreground-rgb;
+
+}
+
+.search {
+    padding: 3em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 5%;
+    row-gap: 2em;
+    
+
+    .select {
+        display: block;
+        width: 100% ;
+        text-align: center;
+        padding: 0.7em 0;
+
+        border-radius: 24px;
+        background-color: $background-start-rgb;
+        color: $foreground-rgb;
+
+        outline: none;
+    }
+
+    .button {
+        width: 100%;
+        grid-column: span 2;
+        padding:  0.7em 0;
+        border-radius: 24px;
+        border: none;
+        background-color: $background-start-rgb;
+        outline: none;
+        transition:  background-color 0.3s ease-in;
+
+        .link {
+            text-decoration: none;
+            color: $foreground-rgb;
+        }
+    }
+
+    .button:hover {
+        background-color: red;
+        
+    }
+
+    .message {
+        text-align: center;
+        grid-column: span 2;
+        color: $foreground-rgb;
+    }
+}

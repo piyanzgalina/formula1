@@ -1,0 +1,12 @@
+$background-start-rgb: rgb(38, 38, 38);
+$background-end-rgb: rgb(28, 28, 28);
+$foreground-rgb: rgb(255, 255, 255);
+$regular-font: Formula1-Regular;
+$black-font: Formula1-Black;
+
+
+.link {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: $foreground-rgb;
+}
