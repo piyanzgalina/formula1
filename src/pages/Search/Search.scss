@@ -33,6 +33,7 @@ $black-font: Formula1-Black;
         display: block;
         width: 100% ;
         text-align: center;
+        align-self: center;
         padding: 0.7em 0;
 
         border-radius: 24px;
@@ -42,25 +43,31 @@ $black-font: Formula1-Black;
         outline: none;
     }
 
-    .button {
+   
+    .link {
         width: 100%;
         grid-column: span 2;
-        padding:  0.7em 0;
+        padding:  0.8em 0;
+        align-self: center;
+
         border-radius: 24px;
         border: none;
+
         background-color: $background-start-rgb;
         outline: none;
-        transition:  background-color 0.3s ease-in;
 
-        .link {
-            text-decoration: none;
+        transition:  scale 0.5s ease-in;
+        text-align: center;
+
+        .button {
+            background-color: $background-start-rgb;
+            outline: none;
             color: $foreground-rgb;
         }
     }
-
-    .button:hover {
-        background-color: red;
-        
+    
+    .link:hover {
+        scale: 1.05;
     }
 
     .message {

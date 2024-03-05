@@ -12,7 +12,7 @@ export const useCircuitsByYear = ({ selectedYear }) => {
         }
 
         const { data } = await axios.get(
-          `http://ergast.com/api/f1/${selectedYear}.json`,
+          `https://ergast.com/api/f1/${selectedYear}.json`,
         );
         
         if (!data) throw new Error(`Ooops! Unable to fetch circuits`);

@@ -7,7 +7,7 @@ export const useSchedule = () => {
     queryFn: async () => {
       try {
         const { data } = await axios.get(
-          `http://ergast.com/api/f1/2024.json`,
+          `https://ergast.com/api/f1/2024.json`,
         ); 
   
         const shedule = data.MRData.RaceTable;

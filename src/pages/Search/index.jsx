@@ -42,16 +42,16 @@ export const Search = () => {
                     options={circuits}
                 />
         
-                <button
-                    className='button'
-                >        
-                    <Link className='link' to={message ? '' :
-                        `/search/${selectedYear}/${selectedCircuit}/results`
-                        }
-                    >
+                     
+                <Link className='link' to={message ? '' :
+                    `/search/${selectedYear}/${selectedCircuit}/results`
+                    }
+                >
+                    <button className='button'> 
                         Search
-                    </Link>
-                </button>
+                    </button>
+                </Link>
+              
 
                 {message && (
                     <div

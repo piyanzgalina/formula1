@@ -12,7 +12,7 @@ export const useRacesResults = ({ selectedYear, selectedCircuit }) => {
     queryFn: async () => {
       try {
         const { data } = await axios.get(
-          `http://ergast.com/api/f1/${selectedYear}/${selectedCircuit}/results.json`,
+          `https://ergast.com/api/f1/${selectedYear}/${selectedCircuit}/results.json`,
         ); 
   
         const raceResult = data.MRData.RaceTable.Races[0];

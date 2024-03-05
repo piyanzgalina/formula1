@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import './Header.scss';
+import { Logo } from '../Logo';
+import { GitHubLogo } from '../GitHubLogo';
 
 export const Header = () => {
     return (
@@ -7,12 +9,7 @@ export const Header = () => {
             <Link
                 to='/'
             >
-                <img
-                    src='images/F1logo.svg'
-                    srcSet='images/F1.png'
-                    className="logo"
-                    alt="F1 logo"
-                />
+                <Logo />
             </Link>
             <Link 
                 className="link"
@@ -31,11 +28,7 @@ export const Header = () => {
                 className="link"
                 to='https://github.com/piyanzgalina/formula1'
             >
-                <img
-                    src='images/github.png'
-                    className="github"
-                    alt="GitHub logo"
-                />
+                <GitHubLogo />
             </Link>
         </header>
     )

@@ -15,6 +15,7 @@ $regular-font: Formula1-Regular;
     :first-child {
         margin-right: auto;
         width: 5em;
+        fill: red($color: #000000);
     }
 
     .link {
@@ -25,10 +26,11 @@ $regular-font: Formula1-Regular;
     }
 
     .github {
-        height: 1.8em;
-        width: 1.8em;
+        width: 1.5em;
+        height: 1.5em;
         background-color: $foreground-rgb;
         border-radius: 50%;
         border: 2px solid $foreground-rgb;
+        fill: white;
     }
 }
