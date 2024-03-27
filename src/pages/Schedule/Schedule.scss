@@ -20,11 +20,11 @@ $black-font: Formula1-Black;
 
     .raceWrapper {
         width: 100%;
-        height: 6em;
+        height: 100%;
 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 0.5em;
 
         padding: 1em 3em;
         margin: 1em;
@@ -36,6 +36,10 @@ $black-font: Formula1-Black;
             font-size: 0.8em;
         }
 
+        .raceInfo {
+            padding-bottom: 1em;
+        }
+
         .raceName {
             font-size: 1.7em;
             font-family: $black-font;
@@ -43,17 +47,13 @@ $black-font: Formula1-Black;
         }
 
         .circuitName {
-            text-decoration: none;
             color: $foreground-rgb;
         }
 
-        :last-child {
+        div {
             display: flex;
             justify-content: space-between;
-        }
 
-        .date {
-            color: red;
         }
     }
 }

@@ -10,9 +10,10 @@ export const useSchedule = () => {
           `https://ergast.com/api/f1/2024.json`,
         ); 
   
-        const shedule = data.MRData.RaceTable;
+        const schedule = data.MRData.RaceTable;
+        console.log(schedule)
 
-        return shedule;
+        return schedule;
 
       } catch(err) {
         return `Some error: ${err}`;
